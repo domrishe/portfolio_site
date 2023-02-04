@@ -1,53 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Dominic Rishe</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
 
-    <body>
-        <nav>
-            <ul>
-                <li>Dominic Rishe</li>
-                <li>
-                    <a href="#aboutjump">About</a>
-                </li>
-                <li>
-                    <a href="#indexjump">Index</a>
-                </li>
-            </ul>
-        </nav>
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dominic Rishe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500&display=swap" rel="stylesheet">
 
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-        
-        <p id="aboutjump">
-        This is a paragraph.
-            <blockquote>This is a blockquote</blockquote>
-            <a>This</a> is a link.
-            <strong>This is a strong tag</strong>
-        </p>
+    <style>
+        @import url('./base.css');
+        @import url('./basic-grid.css');
+    </style>
+</head>
 
-        <p>
-        This is an example of a 
-            <code>code snippet</code>.
-        </p>
+<body>
+    <nav id="navbar">
+        <ul id="navbar-list">
+            <li id="main-title" class="nav-item">
+                <a href="#" class="nav-link">
+                    Dominic Rishe
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    The Garden
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    The Market
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    The Portfolio
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    About
+                </a>
+            </li>
+        </ul>
+    </nav>
 
-        <div id="indexjump"></div>
+    <section class="basic-grid">
+        <div id="test_card" class="card">
+            <img id="img1" src="./images/chair_dd_3.jpg">
+        </div>
+        <div id="test_card" class="card">
+            <img id="img2" src="./images/chair_nn_3.jpg">
+        </div>
+        <div id="test_card" class="card">
+            <img id="img3" src="./images/copper1.jpeg">
+        </div>
+        <div id="test_card" class="card">
+            <img id="img4" src="./images/foam2.jpeg">
+        </div>
+        <div id="test_card" class="card">
+            <img id="img5" src="./images/foam.jpeg">
+        </div>
+        <div id="test_card" class="card">
+            <img src="./images/genuary.png">
+        </div>
+        <div id="test_card" class="card">
+            <img src="./images/marina.png">
+        </div>
+        <div id="test_card" class="card">
+            <img src="./images/robot.png">
+        </div>
+        <div id="test_card" class="card">
+            <img src="./images/ship.png">
+        </div>
 
 
-        <img src="/media/grab-020.png">
+        <div class="card">2</div>
+        <div class="card">3</div>
+        <div class="card">4</div>
+        <div class="card">5</div>
+        <div class="card">6</div>
+        <div class="card">7</div>
+        <div class="card">8</div>
+        <div class="card">9</div>
+        <div class="card">10</div>
+        <div class="card">11</div>
+        <div class="card">12</div>
+    </section>
 
 
-    </body>
+
+</body>
+<svg>
+    <defs>
+        <filter id="dark-green-sepia" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox"
+            primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feColorMatrix type="matrix" values=".33 .33 .33 0 0
+                    .33 .33 .33 0 0
+                    .33 .33 .33 0 0
+                    0 0 0 1 0" in="SourceGraphic" result="colormatrix" />
+            <feComponentTransfer in="colormatrix" result="componentTransfer">
+                <feFuncR type="table" tableValues="0.25 0.39 0.96" />
+                <feFuncG type="table" tableValues="0.16 0.52 0.97" />
+                <feFuncB type="table" tableValues="0.06 0.39 0.78" />
+                <feFuncA type="table" tableValues="0 1" />
+            </feComponentTransfer>
+            <feBlend mode="color" in="componentTransfer" in2="SourceGraphic" result="blend" />
+        </filter>
+    </defs>
+</svg>
+
+<svg>
+    <defs>
+        <filter id="red-sunset" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feColorMatrix type="matrix" values=".33 .33 .33 0 0
+                    .33 .33 .33 0 0
+                    .33 .33 .33 0 0
+                    0 0 0 1 0" in="SourceGraphic" result="colormatrix"/>
+            <feComponentTransfer in="colormatrix" result="componentTransfer">
+                    <feFuncR type="table" tableValues="0.27 0.86 0.97"/>
+                <feFuncG type="table" tableValues="0.01 0.08 0.81"/>
+                <feFuncB type="table" tableValues="0.02 0.24 0.05"/>
+                <feFuncA type="table" tableValues="0 1"/>
+              </feComponentTransfer>
+            <feBlend mode="color" in="componentTransfer" in2="SourceGraphic" result="blend"/>
+        </filter>
+    </defs>
+</svg>
+
+<svg>
+    <defs>
+        <filter id="purple-sepia" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feColorMatrix type="matrix" values=".33 .33 .33 0 0
+                    .33 .33 .33 0 0
+                    .33 .33 .33 0 0
+                    0 0 0 1 0" in="SourceGraphic" result="colormatrix"/>
+            <feComponentTransfer in="colormatrix" result="componentTransfer">
+                    <feFuncR type="table" tableValues="0.43 0.97"/>
+                <feFuncG type="table" tableValues="0.06 0.88"/>
+                <feFuncB type="table" tableValues="0.37 0.79"/>
+                <feFuncA type="table" tableValues="0 1"/>
+              </feComponentTransfer>
+            <feBlend mode="color" in="componentTransfer" in2="SourceGraphic" result="blend"/>
+        </filter>
+    </defs>
+</svg>
+
+<svg>
+    <defs>
+        <filter id="gold-sunset" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feColorMatrix type="matrix" values=".33 .33 .33 0 0
+                    .33 .33 .33 0 0
+                    .33 .33 .33 0 0
+                    0 0 0 1 0" in="SourceGraphic" result="colormatrix"/>
+            <feComponentTransfer in="colormatrix" result="componentTransfer">
+                    <feFuncR type="table" tableValues="0.27 0.86 1"/>
+                <feFuncG type="table" tableValues="0.01 0.31 0.95"/>
+                <feFuncB type="table" tableValues="0.02 0.02 0.02"/>
+                <feFuncA type="table" tableValues="0 1"/>
+              </feComponentTransfer>
+            <feBlend mode="color" in="componentTransfer" in2="SourceGraphic" result="blend"/>
+        </filter>    </defs>
+</svg>
+
+
 </html>

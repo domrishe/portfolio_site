@@ -1,0 +1,10 @@
+.basic-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(max(25%, 180px), 1fr));
+    margin: 7% 15%;
+}
+
+.basic-grid > div {
+    aspect-ratio: 1 / 1;
+}
