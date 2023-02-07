@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+:root {
+    --cream: #F6F5F1;
+    --black: #353534;
+
+}
+
+body {
+    background: var(--cream);
+    color: var(--black);
+    font-family: 'Unbounded', sans-serif;
+}
+
+ #navbar {
+    /* border: solid black 3px; */
+    width: 100%;
+    height: 40px;
+ }
+
+ #navbar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.7rem;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+ }
+
+ #navbar-list li {
+    /* border: solid red 2px; */
+    white-space: nowrap;
+    margin-left: 0.7rem;
+ }
+
+ #navbar-list li a {
+    text-decoration: none;
+    color: currentColor;
+    filter: opacity(40%);
+ }
+
+ #navbar-list li a:hover {
+    filter: none;
+ }
+
+ #main-title {
+    margin-right: auto;
+    font-size: 1rem;
+ }
+
+button {
+   height: 150px;
+   width: 150px;
+   transition-duration: 0.4ms;
+}
+
+#btn-1 {
+   background-color: hsl(11, 100%, 52%);
+   border: solid hsl(11, 100%, 52%) 38px;
+   background-clip: content-box, padding-box;
+   padding: 20px;
+   box-shadow: inset 0 0 0 20px hsl(223, 100%, 50%);
+}
+
+#btn-1:hover {
+   background-color: rgb(150, 149, 148);
+   border-color: rgb(150, 149, 148);
+   cursor: pointer;
+}
+
+#btn-1:active {
+   background-color: rgb(34, 255, 0);
+   border-color: rgb(34, 255, 0);
+}
+
+#btn-2 {
+   outline: solid black 1px;
+   outline-offset: -5px;
+
+}
+
+
+
