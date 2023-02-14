@@ -115,13 +115,13 @@ body {
 .card:hover p {
    letter-spacing: normal;
    background-color: #5CF8C0;
-   outline: solid var(--black) 0.5px;
+   /* outline: solid var(--black) 0.5px; */
    outline-offset: -3.5px;
 }
 
 #navbar-list li:hover {
    background-color: #5CF8C0;
-   outline: solid var(--black) 0.5px;
+   /* outline: solid var(--black) 0.5px; */
    outline-offset: -3.5px;
    /* filter: none; */
    font-style: italic;
