@@ -1,69 +1,88 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+@font-face {
+   font-family: 'Gulax';
+   src: url('Gulax-Regular.woff2') format('woff2'),
+        url('Gulax-Regular.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+ }
+ 
 
 :root {
-   --cream: #F6F5F1;
+   --cream: #f6f5f1;
    --black: #353534;
 
 }
 
 body {
-   background: var(--cream);
-   color: var(--black);
+   background: black;
+   color: var(--cream);
    font-family: 'Unbounded', sans-serif;
 }
 
 .card {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   background: var(--cream);
-   color: var(--black);
-   /* box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem; */
-   height: 100%;
-   width: 100%;
-   /* border-radius: 8px; */
+   display: grid;
+   grid-template-rows: minmax(0, 1fr) max-content;
+   background-color: rgb(35, 33, 36);
+   outline: solid transparent 1px;
+   outline-offset: 0px;
    transition: all 500ms;
-   overflow: hidden;
-   background-color: rgb(255, 255, 255);
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
+   position: relative;
+   z-index: 0;
 }
 
 .card img {
    object-fit: cover;
-   width: 93%;
-   height: 80%;
-   margin-top: 4%;
+   height: 100%;
+   width: 100%;
    transition: all 500ms;
-   /* filter: invert(80%) sepia(10%) saturate(1222%) hue-rotate(108deg) brightness(86%) contrast(83%); */
-   filter: saturate(0);
+
+   box-sizing: border-box;
+   padding: 10px 10px 0px 10px;
+   position: relative;
+   z-index: -1;
 }
 
-.card p {
-   margin-top: auto;
-   margin-bottom: auto;
-   text-align: left;
-   font-size: 1rem;
-   font-family: 'IBM Plex Mono', monospace;
+.label {
+   justify-self: flex-start;
+   box-sizing: border-box;
+   font-family: 'Gulax';
+   font-size: 1.2rem;
    font-weight: 100;
-   line-height: 1.8rem;
-   letter-spacing: -0.455rem;
-   transition: all 500ms;
-   white-space: nowrap;
-   padding: 0 0.7rem 0;
+   letter-spacing: -0.03em;
+   background-color: transparent;
+   padding: 0;
+   margin: 0;
+   color: inherit;
 }
 
-/* #img1 {filter: url(#red-sunset)}
-#img2 {filter: url(#dark-green-sepia)}
-#img3 {filter: url(#purple-sepia)}
-#img4 {filter: url(#gold-sunset)}
-#img5 {filter: url(#cherry-icecream)}
-#img6 {filter: url(#dark-green-sepia)} */
+.slug {
+   justify-self: flex-end;
+   width: min-content;
+   box-sizing: border-box;
+   font-family: 'IBM Plex Mono';
+   font-size: 0.5rem;
+   font-weight: 100;
+   padding: 0rem;
+   margin: 0;
+   text-align: right;
+   color: inherit;
+}
+
+.card-foot {
+   display: flex;
+   background-color: rgb(35, 33, 36);
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-start;
+   margin: 0;
+   padding: 6px 11px 11px 11px;
+   color: #f0f0dc;
+   transition: all 500ms;
+
+}
 
 #navbar {
-   /* border: solid black 3px; */
    width: 100%;
    height: 100px;
 }
@@ -72,7 +91,6 @@ body {
    list-style: none;
    padding: 0;
    margin: 0;
-   /* background-color: green; */
    display: flex;
    align-items: center;
    height: 100%;
@@ -81,11 +99,10 @@ body {
 
 #navbar-list li {
    white-space: nowrap;
-   /* margin-left: 0.7rem; */
 }
 
 #dom {
-   height: 200px;
+   height: 100px;
    width: 100%;
 }
 
@@ -108,27 +125,49 @@ body {
 
 
 .card:hover {
-   box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
-   transform: translateY(-15px) scale(1.1);
+   /* box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em; */
+   transform: translateY(-15px) /*scale(1.1)*/;
+   background-color: #9483eb;
+   outline: solid var(--cream) 1px;
 }
 
-.card:hover p {
-   letter-spacing: normal;
-   background-color: #5CF8C0;
-   /* outline: solid var(--black) 0.5px; */
-   outline-offset: -3.5px;
+.card:hover .card-foot {
+   background-color: #9483eb;
+   color: var(--black);
+   outline: solid var(--cream) 2px;
+
+
 }
 
 #navbar-list li:hover {
-   background-color: #5CF8C0;
-   /* outline: solid var(--black) 0.5px; */
+   outline: solid var(--black) 0.5px;
    outline-offset: -3.5px;
+   color: var(--black);
    /* filter: none; */
    font-style: italic;
 }
 
+#market:hover {
+   background-color: #5CF8C0;
+}
+
+#garden:hover {
+   background-color: rgb(254, 219, 123);
+}
+
+#portfolio:hover {
+   background-color: rgb(255, 113, 91);
+}
+
+#about:hover {
+   background-color: rgb(218, 139, 255);
+}
+
 .card:hover img {
-   filter: none !important;
+   /* filter: none !important; */
+   filter: saturate(0);
+   outline: solid var(--cream) 2px;
+   padding: 0;
 }
 
 #dark-green-sepia {
