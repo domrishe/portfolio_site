@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
 @font-face {
    font-family: 'Gulax';
-   src: url('Gulax-Regular.woff2') format('woff2'),
-        url('Gulax-Regular.woff') format('woff');
+   src: url('/fonts/Gulax-Regular.woff') format('woff'),
+        url('/fonts/Gulax-Regular.woff2') format('woff2');
    font-weight: normal;
    font-style: normal;
  }
