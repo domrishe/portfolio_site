@@ -19,6 +19,6 @@
   @media screen and (max-width: 767px) {
     .basic-grid {
       grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-      padding: 20px;
+      padding: 77px;
     }
   }
