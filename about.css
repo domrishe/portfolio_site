@@ -1,0 +1,36 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+    border: solid blue 3px;
+  }
+  
+  .blurb {
+    flex: 1;
+    margin: 10px;
+    border: solid red 3px;
+    max-width: 300px;
+  }
+
+  .pfp {
+    flex: 0;
+    margin: 10px;
+    border: solid green 3px;
+    width: 300px;
+  }
+
+  .pfp img {
+width: 300px;
+  }
+
+  #tag {
+    background-color: aquamarine;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+  
