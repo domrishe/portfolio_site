@@ -1,8 +1,8 @@
 .basic-grid {
     display: grid;
     gap: calc(2.5vw + 30px);
-    grid-template-columns: repeat(auto-fit, minmax(max(20%, 180px), 1fr));
-    padding: 77px;
+    grid-template-columns: repeat(auto-fit, minmax(max(20%, 200px), 1fr));
+    padding: 33px 77px;
 }
 
 .basic-grid > div {
@@ -19,6 +19,7 @@
   @media screen and (max-width: 767px) {
     .basic-grid {
       grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-      padding: 77px;
+      padding: 15px;
+      gap: 15px;
     }
   }

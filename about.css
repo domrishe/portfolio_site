@@ -29,13 +29,18 @@ font-style: light;
     flex: 1;
     margin: 10px;
     border: solid red 3px;
-    max-width: 300px;
+    max-width: 500px;
+    min-width: 300px;
+
   }
 
   .blurb span {
     font-family: 'Compagnon Medium';
-    font-style: medium;
-    font-weight: medium;
+  }
+
+  .blurb p{
+    font-family: 'Compagnon Light';
+    line-height: 1rem;
   }
 
   .pfp {
@@ -51,11 +56,5 @@ width: 300px;
 
   #tag {
     background-color: aquamarine;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .flex-container {
-      flex-direction: column;
-    }
   }
   
